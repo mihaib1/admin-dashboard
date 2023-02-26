@@ -1,0 +1,254 @@
+body{
+    margin:0;
+}
+
+
+.container{
+    display:grid;
+    grid-template-areas:
+    "sidebar head"
+    "sidebar main";
+    grid-template-columns: 2fr 8fr;
+}
+
+.header{
+    position:relative;
+    grid-area:head;
+    padding-bottom:8px;
+    display:flex;
+    flex-direction: column;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+}
+
+.side-bar{
+    color: white;
+    background-color: #0284c7;
+    grid-area:sidebar;
+    padding-left: 8px;
+}
+
+.main-page{
+    background-color: #e2e8f0;
+    grid-area: main;
+    display:grid;
+    grid-template-areas:
+    "projects announcements"
+    "projects trending";
+    grid-template-columns: 5fr 2fr;
+    padding-left: 16px;
+    padding-bottom: 32px;
+}
+
+h3, h1{
+    font-family: 'Roboto', sans-serif;
+    font-weight:500;
+}
+
+.projects{
+    grid-area: projects;
+}
+
+.announcements{
+    grid-area: announcements;
+    border-radius: 16px;
+    padding-left: 1em;
+    margin-right: 1rem;
+}
+
+.trending{
+    grid-area: trending;
+}
+
+.search-panel{
+    display:flex;
+    justify-content: space-between;
+    padding:16px 2em;
+}
+
+.user-panel{
+    display:flex;
+    gap:1rem;
+    justify-content: center;
+}
+
+.user-name{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.welcome-screen{
+    display:flex;
+    justify-content: space-between;
+    padding:8px 2em;
+}
+
+.hero-btn{
+    background-color: #0284c7;
+    color:white;
+    font-weight: bolder;
+    border-radius:16px;
+    padding:8px 32px;
+    margin:4px;
+    border:none;
+}
+
+.hero-btn:hover{
+    background-color: #0076b1;
+    transition-duration:0.2s;
+}
+
+.hero-btn:active{
+    background-color: #006192;
+}
+
+ul{
+    list-style-type: none;
+}
+
+li{
+    padding:2px;
+    font-family: "Roboto", "sans-serif";
+}
+
+li:hover{
+    background-color: #006192;
+    transition-duration: 0.2s;
+}
+
+.projects-cards{
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap:16px;
+    padding: 8px;
+}
+
+.search-bar{
+    background-color: #e2e8f0;
+    border-radius:8px;
+    border:none;
+    width:30em;
+    height: 24px;
+}
+
+.announcements-list{
+    background-color: white;
+    padding:16px;
+    padding-top:0.05rem;
+    border-radius: 16px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.announcement:nth-child(1){
+    padding-bottom: 16px;
+}
+.announcement:nth-child(2){
+    border-top: 1px solid lightgrey;
+    border-bottom: 1px solid lightgrey;
+    padding-top:-16px;
+    padding-bottom: 16px;
+}
+
+.project-description{
+    padding-left:8px;
+    padding-bottom:16px;
+    padding-right:6px;
+}
+
+.buttons-row{
+    display:flex;
+    justify-content: flex-end;
+    gap:6px;
+    padding-bottom:8px;
+    padding-right:1em;
+}
+
+.project-card{
+    background-color: white;
+    border-radius:8px;
+    padding-left:8px;
+    padding-bottom: 8px;
+    border-left:solid 8px;
+    border-left-color:gold;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.project-card > h3{
+    padding-left:8px;
+    font-family: 'Roboto', sans-serif;
+    font-weight:500;
+}
+
+.trending{
+    grid-area: trending;
+    display:grid;
+    border-radius: 16px;
+    padding-left: 1em;
+    margin-right: 1rem;
+    padding-bottom:8px;
+}
+
+.trending-list{
+    display: grid;
+    background-color: white;
+    padding-left: 8px;
+    border-radius: 16px;
+    gap:1em;
+    padding:1em;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.user{
+    display: flex;
+    justify-content: flex-start;
+    gap: 1rem;
+}
+
+.user-greet{
+    display:flex;
+    gap:8px;
+    justify-content: center;
+    align-items: center;
+}
+
+.small-pic{
+    width: 24px;
+    height: 24px;
+}
+
+.normal-pic{
+    width:48px;
+    height:48px;
+    background: none;
+    border:none;
+    opacity:1;
+    display:block;
+}
+
+.about-user{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.05rem;
+}
+
+.search-img{
+    width:24px;
+    height:24px;
+}
+
+.search{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap:8px;
+}
+
+.notifications-img{
+    width:24px;
+    height:24px;
+}
+
+
+
