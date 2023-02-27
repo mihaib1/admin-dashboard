@@ -21,10 +21,14 @@ body{
 }
 
 .side-bar{
+    position:relative;
     color: white;
     background-color: #0284c7;
     grid-area:sidebar;
     padding-left: 8px;
+    display:grid;
+    align-content:start;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
 
 .main-page{
@@ -108,8 +112,13 @@ ul{
 }
 
 li{
-    padding:2px;
+    display:flex;
+    justify-content: flex-start;
+    align-items: center;
     font-family: "Roboto", "sans-serif";
+    font-size:large;
+    font-weight: 400;
+    padding:8px;
 }
 
 li:hover{
@@ -251,4 +260,33 @@ li:hover{
 }
 
 
+
+object{
+    filter: brightness(0) invert(1);
+}
+
+.dash-title-svg{
+    width:40px;
+    height:40px;
+    padding-right:6px;
+}
+
+.menu-item-svg{
+    width:20px;
+    height:20px;
+    padding-right:8px;
+}
+
+.card-svg{
+    width:20px;
+    height:20px;
+    filter: brightness(0);
+    padding-left:8px;
+}
+
+.dashboard-title{
+    display:flex;
+    justify-content: flex-start;
+    align-items:center;
+}
 
