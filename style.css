@@ -2,7 +2,6 @@ body{
     margin:0;
 }
 
-
 .container{
     display:grid;
     grid-template-areas:
@@ -278,8 +277,8 @@ object{
 }
 
 .card-svg{
-    width:20px;
-    height:20px;
+    width:25px;
+    height:25px;
     filter: brightness(0);
     padding-left:8px;
 }
@@ -288,5 +287,6 @@ object{
     display:flex;
     justify-content: flex-start;
     align-items:center;
+    padding-right:4px;
 }
 
